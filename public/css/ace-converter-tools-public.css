@@ -1,0 +1,132 @@
+.field-wrapper{margin-bottom: 10px;}
+.input-label-text{font-size: 14px;font-weight: bold;margin-bottom: 5px;}
+.form-input {padding: 8px;border-radius: 3px;border: 1px solid #ccc;}
+.input-label-text {width: 70px;display: inline-block;}
+/* DMS tool */
+.outer {
+    display: flex;
+    gap: 40px;
+    background: #f3f3f3;
+    padding: 40px;
+    border-radius: 10px;
+}
+.box1, .box2 {
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.outer h5 {
+    margin: 0 0 20px;
+}
+.outer table {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 30px;
+}
+.outer table input, .outer table select {
+    height: 34px;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    padding: 1px 6px;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+.outer table input:focus, .outer table select:focus {
+	outline: none;
+}
+.outer table td, .outer table th {
+    font-weight: 500;
+    padding: 5px;
+}
+.outer .field-wrapper button {
+    padding: 8px;
+    border: none;
+    background: #d50000;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.outer .field-wrapper button.arrow-btn {
+    background: #325ce8;
+}
+.outer .field-wrapper label {
+    display: block;
+    margin: 0 0 5px;
+    font-weight: 500;
+}
+.outer .box1 input {
+    height: 34px;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    padding: 1px 6px;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 15px;
+}
+.right-btns {
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+}
+
+
+.tool-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 40px;
+}
+.tool-container .field-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+}
+.tool-container .field-wrapper input {
+    max-width: 600px;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    padding: 1px 10px;
+    box-sizing: border-box;
+}
+.tool-container .field-wrapper input:focus{
+	outline: none;
+}
+.tool-container .field-wrapper label {
+    max-width: 200px;
+    width: 100%;
+    font-weight: 500;
+}
+.tool-container .field-wrapper button {
+    background: #325ce8;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tool-container .field-wrapper.end button {
+    background: #d50000;
+    padding: 12px 31px;
+}
+.tool-container .field-wrapper.end {
+    justify-content: end;
+}
+form.aceColorTool.forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.field-wrapper.none-energy {
+    display: none;
+}
