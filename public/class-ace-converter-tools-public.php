@@ -98,26 +98,40 @@ class Ace_Converter_Tools_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ace-converter-tools-public.js', array( 'jquery' ), $this->version, false );
 		
-		// Tool Scripts
-		// wp_enqueue_script( $this->plugin_name."-color", plugin_dir_url( __FILE__ ) . 'js/tool-color.js', array( 'jquery' ), $this->version, false );
-
 	}
 
+	/**
+	 * Initiate on init hook .
+	 *
+	 * @since    1.0.0
+	 */
 	public function aceOnReadyHandler(){
 		add_shortcode('ace-converter-tool', [$this, 'aceShortCodeCallback']);
 	}
-
+   	
+	/**
+	 * Convert title in a way so that it will trigger JS function.
+	 * Its being used in public partials 
+	 * @since    1.0.0
+	 */
+    public function aceConvertToTitleCase($inputString) {
+        $words = explode('-', $inputString);
+        $capitalizedWords = array_map(function ($word) {
+                return ucfirst($word);
+            }, $words);
+            $camelCaseString = implode('', $capitalizedWords);
+            return $camelCaseString;
+    }
+	
+	/**
+	 * Give output for Short-Code
+	 *
+	 * @since    1.0.0
+	 */
 	public function aceShortCodeCallback( $atts ){
-		
-		$shortcodeAtts = shortcode_atts( array(
-			'tool' => 'color'
-		), $atts );
-
-		$file = plugin_dir_path( __FILE__ ) . "partials/shortcode/" . $shortcodeAtts['tool'] . ".php";
-		if( ! file_exists($file) ) $file = plugin_dir_path( __FILE__ ) . "partials/shortcode/color.php";
-
+		$shortCodeAtts = shortcode_atts( array( 'tool' => 'color' ), $atts );
 		ob_start();
-			include( $file );
+			include( ACE_CONVERTER_TOOLS_PATH . "public/partials/ace-converter-tools-public-display.php" );
 		return ob_get_clean();
 	}
 

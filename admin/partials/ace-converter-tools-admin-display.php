@@ -11,15 +11,15 @@
  * @subpackage Ace_Converter_Tools/admin/partials
  */ 
 
-$dms_converter_text = get_option("dms-converter");
-$energy_converter_text = get_option("energy-converter");
-$color_converter_text = get_option("color-converter");
-$speed_converter_text = get_option("speed-converter");
-$pressure_converter_text = get_option("pressure-converter");
-$charger_converter_text = get_option("charger-converter");
+$dms_converter_text = get_option("acex_dms_converter");
+$energy_converter_text = get_option("acex_energy_converter");
+$color_converter_text = get_option("acex_color_converter");
+$speed_converter_text = get_option("acex_speed_converter");
+$pressure_converter_text = get_option("acex_pressure_converter");
+$charger_converter_text = get_option("acex_charger_converter");
 
 ?>
-<div class="ace-tools">
+<div class="ace-tools acex">
     <div id="logo">
         <span><?php echo get_admin_page_title(); ?></span>
     </div>
@@ -27,27 +27,27 @@ $charger_converter_text = get_option("charger-converter");
         <div id="left-menu">
             <ul>
                 <li class="active" id="colorMenuItem"><a href="#">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/colour.png' ?>" class="tool-icon">
+                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/colour.png' ?>" class="tool-icon">
                     <span>Color Converter</span>
                 </a></li>
                 <li id="energyMenuItem"><a href="#">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/energy.png' ?>" class="tool-icon">
+                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/energy.png' ?>" class="tool-icon">
                     <span>Energy Converter</span>
                 </a></li>
                 <li id="speedMenuItem"><a href="#">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/speed.png' ?>" class="tool-icon">
+                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/speed.png' ?>" class="tool-icon">
                     <span>Speed Converter</span>
                 </a></li>
                 <li id="pressureMenuItem"><a href="#">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/pressure.png' ?>" class="tool-icon">
+                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/pressure.png' ?>" class="tool-icon">
                     <span>Pressure Converter</span>
                 </a></li>
                 <li id="dmsMenuItem"><a href="#">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/dms.png' ?>" class="tool-icon">
+                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/dms.png' ?>" class="tool-icon">
                     <span>DMS Converter</span>
                 </a></li>
                 <li id="chargeMenuItem"><a href="#">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/charge.png' ?>" class="tool-icon">
+                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/charge.png' ?>" class="tool-icon">
                     <span>Charge Converter</span>
                 </a></li>
             </ul>
@@ -67,12 +67,13 @@ $charger_converter_text = get_option("charger-converter");
                                 </div>
                                 <div class="content-box">
                                     <code>[ace-converter-tool tool=color]</code>
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copy.png' ?>" class="tool-icon" id="copy">
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copy.png' ?>" class="tool-icon" id="copy">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
                                 </div>
                             </li> 
                             <form action="#colorMenuItem" method="POST" class="color-convert"> 
-                            <?php wp_nonce_field('my_delete_action'); ?>
+                            <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
+                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
                                     <?php
                                         foreach ($color_converter_text as $key => $label): ?>
                                                 <li>
@@ -100,7 +101,7 @@ $charger_converter_text = get_option("charger-converter");
                                                 </p>
                                             </div>
                                             <div class="content-box">
-                                                <div class="prview-image"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/preview/color-converter-preview.png' ?>" class="preview-img"></div>
+                                                <div class="prview-image"><img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/preview/color-converter-preview.png' ?>" class="preview-img"></div>
                                             </div>
                                         </li>
                            
@@ -121,12 +122,13 @@ $charger_converter_text = get_option("charger-converter");
                                 </div>
                                 <div class="content-box">
                                     <code>[ace-converter-tool tool=energy]</code>
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copy.png' ?>" class="tool-icon" id="copy">
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copy.png' ?>" class="tool-icon" id="copy">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
                                 </div>
                             </li>  
                             <form action="#energyMenuItem" method="POST" class="energy-convert">
-                            <?php wp_nonce_field('my_delete_action'); ?>
+                            <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
+                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
                                     <?php $count_energy=1;
                                     foreach ($energy_converter_text as $key => $label): 
                                         if ($count_energy % 2 != 0){
@@ -164,7 +166,7 @@ $charger_converter_text = get_option("charger-converter");
                                             </p>
                                         </div>
                                         <div class="content-box">
-                                            <div class="prview-image"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/preview/energy-converter-preview.png' ?>" class="preview-img"></div>
+                                            <div class="prview-image"><img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/preview/energy-converter-preview.png' ?>" class="preview-img"></div>
                                         </div>
                                     </li>
 
@@ -177,7 +179,8 @@ $charger_converter_text = get_option("charger-converter");
                     <div class="content-ace">
                         <ul>
                             <form action="#speedMenuItem" method="POST" class="speed-convert">
-                                 <?php wp_nonce_field('my_delete_action'); ?>
+                            <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
+                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
                                  <li>
                                         <div class="label-heading">
                                             <p>
@@ -187,8 +190,8 @@ $charger_converter_text = get_option("charger-converter");
                                         </div>
                                         <div class="content-box">
                                             <code>[ace-converter-tool tool=speed]</code>
-                                            <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copy.png' ?>" class="tool-icon" id="copy">
-                                            <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
+                                            <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copy.png' ?>" class="tool-icon" id="copy">
+                                            <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
                                         </div>
                                     </li>   
                                 
@@ -216,7 +219,7 @@ $charger_converter_text = get_option("charger-converter");
                                             </p>
                                         </div>
                                         <div class="content-box">
-                                            <div class="prview-image"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/preview/speed-converter-preview.png' ?>" class="preview-img"></div>
+                                            <div class="prview-image"><img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/preview/speed-converter-preview.png' ?>" class="preview-img"></div>
                                         </div>
                                     </li>
                                 
@@ -237,13 +240,14 @@ $charger_converter_text = get_option("charger-converter");
                                 </div>
                                 <div class="content-box">
                                     <code>[ace-converter-tool tool=pressure]</code>
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copy.png' ?>" class="tool-icon" id="copy">
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copy.png' ?>" class="tool-icon" id="copy">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
                                 </div>
                             </li> 
                             
                             <form action="#pressureMenuItem" method="POST" class="pressure-convert">
-                                <?php wp_nonce_field('my_delete_action'); ?>
+                            <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
+                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
 
                                 <?php  foreach ($pressure_converter_text as $key => $label): ?>
                                             <li>
@@ -268,7 +272,7 @@ $charger_converter_text = get_option("charger-converter");
                                             </p>
                                         </div>
                                         <div class="content-box">
-                                            <div class="prview-image"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/preview/pressure-converter-preview.png' ?>" class="preview-img"></div>
+                                            <div class="prview-image"><img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/preview/pressure-converter-preview.png' ?>" class="preview-img"></div>
                                         </div>
                                     </li>
                                     
@@ -290,12 +294,13 @@ $charger_converter_text = get_option("charger-converter");
                                
                                 <div class="content-box">
                                     <code>[ace-converter-tool tool=dms]</code>
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copy.png' ?>" class="tool-icon" id="copy">
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copy.png' ?>" class="tool-icon" id="copy">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
                                 </div>
                             </li> 
                             <form action="#dmsMenuItem" method="POST" id="myform"> 
-                               <?php wp_nonce_field('my_delete_action'); ?>
+                            <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
+                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
                                 <?php foreach ($dms_converter_text as $key => $label): ?>
                                             <li>
                                                 <div class="label-heading">
@@ -319,7 +324,7 @@ $charger_converter_text = get_option("charger-converter");
                                             </p>
                                         </div>
                                         <div class="content-box">
-                                            <div class="prview-image"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/preview/dms-converter-preview.png' ?>" class="preview-img"></div>
+                                            <div class="prview-image"><img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/preview/dms-converter-preview.png' ?>" class="preview-img"></div>
                                         </div>
                                     </li>
                                    
@@ -340,12 +345,13 @@ $charger_converter_text = get_option("charger-converter");
                                 </div>
                                 <div class="content-box">
                                     <code>[ace-converter-tool tool=charge]</code>
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copy.png' ?>" class="tool-icon" id="copy">
-                                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copy.png' ?>" class="tool-icon" id="copy">
+                                    <img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/tools/copying.png' ?>" class="tool-icon copied" style="display:none;">
                                 </div>
                             </li>  
                             <form action="#chargeMenuItem" method="POST" id="myform"> 
-                            <?php wp_nonce_field('my_delete_action'); ?>
+                            <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
+                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
                                 <?php
                             // print_r($charger_converter_text);
                                 
@@ -374,7 +380,7 @@ $charger_converter_text = get_option("charger-converter");
                                         </p>
                                     </div>
                                     <div class="content-box">
-                                        <div class="prview-image"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/preview/charge-converter-preview.png' ?>" class="preview-img"></div>
+                                        <div class="prview-image"><img src="<?php echo ACE_CONVERTER_TOOLS_URL . 'admin/images/preview/charge-converter-preview.png' ?>" class="preview-img"></div>
                                     </div>
                                 </li>
                              

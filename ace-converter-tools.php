@@ -36,35 +36,40 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'ACE_CONVERTER_TOOLS_VERSION', '1.0.0' );
+define( 'ACE_CONVERTER_TOOLS_URL', plugin_dir_url( __FILE__ ) );
+define( 'ACE_CONVERTER_TOOLS_PATH', plugin_dir_path( __FILE__ ) );
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-ace-converter-tools-activator.php
  */
-function activate_ace_converter_tools() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-activator.php';
-	Ace_Converter_Tools_Activator::activate();
+if (!function_exists('acex_activate_ace_converter_tools')) {
+	function acex_activate_ace_converter_tools() {
+		require_once plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-activator.php';
+		Ace_Converter_Tools_Activator::activate();
+	}
 }
-
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-ace-converter-tools-deactivator.php
  */
-function deactivate_ace_converter_tools() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-deactivator.php';
-	Ace_Converter_Tools_Deactivator::deactivate();
+if (!function_exists('acex_deactivate_ace_converter_tools')) {
+	function acex_deactivate_ace_converter_tools() {
+		require_once plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-deactivator.php';
+		Ace_Converter_Tools_Deactivator::deactivate();
+	}
 }
 
-register_activation_hook( __FILE__, 'activate_ace_converter_tools' );
-register_deactivation_hook( __FILE__, 'deactivate_ace_converter_tools' );
+register_activation_hook( __FILE__, 'acex_activate_ace_converter_tools' );
+register_deactivation_hook( __FILE__, 'acex_deactivate_ace_converter_tools' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-constants.php';
+
 require plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools.php';
-require plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-helper.php';
+//require plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-helper.php';
 
 /**
  * Begins execution of the plugin.
@@ -75,10 +80,12 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-ace-converter-tools-helper
  *
  * @since    1.0.0
  */
-function run_ace_converter_tools() {
+if (!function_exists('acex_run_ace_converter_tools')) {
+	function acex_run_ace_converter_tools() {
 
-	$plugin = new Ace_Converter_Tools();
-	$plugin->run();
+		$plugin = new Ace_Converter_Tools();
+		$plugin->run();
 
+	}
 }
-run_ace_converter_tools();
+acex_run_ace_converter_tools();

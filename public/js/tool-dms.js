@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Function to convert decimal degrees to DMS
-    function decimalToDMS(degrees, isLatitude) {
+    function aceDecimalToDMS(degrees, isLatitude) {
         var hemisphere = degrees >= 0 ? (isLatitude ? 'N' : 'E') : (isLatitude ? 'S' : 'W');
         degrees = Math.abs(degrees);
         var deg = Math.floor(degrees);
@@ -19,19 +19,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to convert DMS to decimal degrees
-    function DMSToDecimal(deg, min, sec, hemisphere) {
+    function aceDMSToDecimal(deg, min, sec, hemisphere) {
         var sign = (hemisphere === 'S' || hemisphere === 'W') ? -1 : 1;
         return sign * (deg + min / 60 + sec / 3600);
     }
 
     // Function to handle the transfer button click for decimal to DMS conversion
-        document.getElementById('transfertoDeg').addEventListener('click', function () {
+        document.getElementById('acex_transfertoDeg').addEventListener('click', function () {
         var lat = parseFloat(document.getElementById('LatVal1').value) || 0;
         var long = parseFloat(document.getElementById('LongVal1').value) || 0;
 
         // Convert latitude and longitude to DMS
-        var latDMS = decimalToDMS(lat, true);
-        var longDMS = decimalToDMS(long, false);
+        var latDMS = aceDecimalToDMS(lat, true);
+        var longDMS = aceDecimalToDMS(long, false);
 
         // Display DMS values in the respective input fields
         document.getElementById('dms_lat_deg').value = lat ? latDMS.deg || 0 : 0;
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         dmsLongHemSelect.style.display = longDMS.hemisphere === '' ? 'none' : 'block';
     });
 
-    var resetBtn = document.getElementById("reset1");
+    var resetBtn = document.getElementById("dmsResetLatLong");
     resetBtn.addEventListener("click", function() {
         // Reset input values
         document.getElementById('LatVal1').value = "";
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Function to handle the transfer button click for DMS to decimal conversion
-    document.getElementById('transfertoDecimal').addEventListener('click', function () {
+    document.getElementById('acexTransfertoDecimal').addEventListener('click', function () {
         // Retrieve DMS values from input fields
         var latDeg = parseFloat(document.getElementById('dms_lat_deg').value) || 0;
         var latMin = parseFloat(document.getElementById('dms_lat_min').value) || 0;
@@ -72,15 +72,15 @@ document.addEventListener('DOMContentLoaded', function () {
         var longHem = document.getElementById('dms_long_hem').value  || 0;
 
         // Convert DMS to decimal degrees
-        var latDecimal = DMSToDecimal(latDeg, latMin, latSec, latHem);
-        var longDecimal = DMSToDecimal(longDeg, longMin, longSec, longHem);
+        var latDecimal = aceDMSToDecimal(latDeg, latMin, latSec, latHem);
+        var longDecimal = aceDMSToDecimal(longDeg, longMin, longSec, longHem);
 
         // Display decimal values in the respective input fields
         document.getElementById('LatVal1').value = latDecimal;
         document.getElementById('LongVal1').value = longDecimal;
     });
 
-    var resetBtn2 = document.getElementById("reset2");
+    var resetBtn2 = document.getElementById("dmsReset");
     resetBtn2.addEventListener("click", function() {
         document.getElementById('dms_lat_deg').value = "";
         document.getElementById('dms_lat_min').value = "";

@@ -1,4 +1,4 @@
-function ConvertFromjoule() {
+function aceConvertFromjoule() {
 
         var joule = parseFloat(document.getElementById("joule").value);
 
@@ -116,7 +116,7 @@ function ConvertFromjoule() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromKilojoule() {
+function aceConvertFromKilojoule() {
 
         var kilojoule = parseFloat(document.getElementById("kilojoule").value);
 
@@ -234,7 +234,7 @@ function ConvertFromKilojoule() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromKilowattHour() {
+function aceConvertFromKilowattHour() {
 
         var kilowatt_hour = parseFloat(document.getElementById("kilowatt_hour").value);
 
@@ -351,7 +351,7 @@ function ConvertFromKilowattHour() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromWattHour() {
+function aceConvertFromWattHour() {
 
         var watt_hour = parseFloat(document.getElementById("watt_hour").value);
 
@@ -469,7 +469,7 @@ function ConvertFromWattHour() {
 }
 
 
-function ConvertFromCalorie() {
+function aceConvertFromCalorie() {
 
         var calorie = parseFloat(document.getElementById("calorie").value);
 
@@ -587,7 +587,7 @@ function ConvertFromCalorie() {
 }
 
 
-function ConvertFromHorsepower() {
+function aceConvertFromHorsepower() {
 
         var horsepower = parseFloat(document.getElementById("horsepower").value);
 
@@ -705,7 +705,7 @@ function ConvertFromHorsepower() {
 }
 
 
-function ConvertFromBtuIt() {
+function aceConvertFromBtuIt() {
 
         var btu_IT = parseFloat(document.getElementById("btu_IT").value);
 
@@ -822,7 +822,7 @@ function ConvertFromBtuIt() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromBtuTh() {
+function aceConvertFromBtuTh() {
 
         var btu_th = parseFloat(document.getElementById("btu_th").value);
 
@@ -939,7 +939,7 @@ function ConvertFromBtuTh() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromGigajoule() {
+function aceConvertFromGigajoule() {
 
         var gigajoule = parseFloat(document.getElementById("gigajoule").value);
 
@@ -1057,7 +1057,7 @@ function ConvertFromGigajoule() {
 }
 
 
-function ConvertFromMegajoule() {
+function aceConvertFromMegajoule() {
 
         var megajoule = parseFloat(document.getElementById("megajoule").value);
 
@@ -1175,7 +1175,7 @@ function ConvertFromMegajoule() {
 }
 
 
-function ConvertFromMillijoule() {
+function aceConvertFromMillijoule() {
 
         var millijoule = parseFloat(document.getElementById("millijoule").value);
 
@@ -1292,7 +1292,7 @@ function ConvertFromMillijoule() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromMicrojoule() {
+function aceConvertFromMicrojoule() {
 
         var microjoule = parseFloat(document.getElementById("microjoule").value);
 
@@ -1409,7 +1409,7 @@ function ConvertFromMicrojoule() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromNanojoule() {
+function aceConvertFromNanojoule() {
 
         var nanojoule = parseFloat(document.getElementById("nanojoule").value);
 
@@ -1526,7 +1526,7 @@ function ConvertFromNanojoule() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromAttjoule() {
+function aceConvertFromAttjoule() {
 
         var attojoule = parseFloat(document.getElementById("attojoule").value);
 
@@ -1643,7 +1643,7 @@ function ConvertFromAttjoule() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromMegaelectron() {
+function aceConvertFromMegaelectron() {
 
         var megaelectron_volt = parseFloat(document.getElementById("megaelectron_volt").value);
 
@@ -1760,7 +1760,7 @@ function ConvertFromMegaelectron() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromKiloelectron() {
+function aceConvertFromKiloelectron() {
 
         var kiloelectron_volt = parseFloat(document.getElementById("kiloelectron_volt").value);
 
@@ -1877,7 +1877,7 @@ function ConvertFromKiloelectron() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromelectronvolt() {
+function aceConvertFromelectronvolt() {
 
         var electron_volt = parseFloat(document.getElementById("electron_volt").value);
 
@@ -1994,7 +1994,7 @@ function ConvertFromelectronvolt() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromerg() {
+function aceConvertFromerg() {
 
         var erg = parseFloat(document.getElementById("erg").value);
 
@@ -2111,7 +2111,7 @@ function ConvertFromerg() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromGigawatthour() {
+function aceConvertFromGigawatthour() {
 
         var gigawatt_hour = parseFloat(document.getElementById("gigawatt_hour").value);
 
@@ -2228,7 +2228,7 @@ function ConvertFromGigawatthour() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromMegawatthour() {
+function aceConvertFromMegawatthour() {
 
         var megawatt_hour = parseFloat(document.getElementById("megawatt_hour").value);
 
@@ -2345,7 +2345,7 @@ function ConvertFromMegawatthour() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertKilowattsecond() {
+function aceConvertKilowattsecond() {
 
         var kilowatt_second = parseFloat(document.getElementById("kilowatt_second").value);
 
@@ -2462,7 +2462,7 @@ function ConvertKilowattsecond() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromWattsecond() {
+function aceConvertFromWattsecond() {
 
         var watt_second = parseFloat(document.getElementById("watt_second").value);
 
@@ -2579,7 +2579,7 @@ function ConvertFromWattsecond() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromNewtonmeter() {
+function aceConvertFromNewtonmeter() {
 
         var newton_meter = parseFloat(document.getElementById("newton_meter").value);
 
@@ -2696,7 +2696,7 @@ function ConvertFromNewtonmeter() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromHorsepowerhour() {
+function aceConvertFromHorsepowerhour() {
 
         var horsepower_hour = parseFloat(document.getElementById("horsepower_hour").value);
 
@@ -2814,7 +2814,7 @@ function ConvertFromHorsepowerhour() {
 }
 /***** 12April2022 */
 
-function ConvertFromKilocalorieIt() {
+function aceConvertFromKilocalorieIt() {
 
         var kilocalorie_it = parseFloat(document.getElementById("kilocalorie_it").value);
     
@@ -2931,7 +2931,7 @@ function ConvertFromKilocalorieIt() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromKilocalorieTh() {
+function aceConvertFromKilocalorieTh() {
 
         var kilocalorie_th = parseFloat(document.getElementById("kilocalorie_th").value);
     
@@ -3048,7 +3048,7 @@ function ConvertFromKilocalorieTh() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromCalorieIt() {
+function aceConvertFromCalorieIt() {
 
         var calorie_it = parseFloat(document.getElementById("calorie_it").value);
     
@@ -3165,7 +3165,7 @@ function ConvertFromCalorieIt() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromCalorieTh() {
+function aceConvertFromCalorieTh() {
 
         var calorie_th = parseFloat(document.getElementById("calorie_th").value);
     
@@ -3282,7 +3282,7 @@ function ConvertFromCalorieTh() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromMegaBtu() {
+function aceConvertFromMegaBtu() {
 
         var mega_Btu = parseFloat(document.getElementById("mega_Btu").value);
     
@@ -3399,7 +3399,7 @@ function ConvertFromMegaBtu() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromTonHour() {
+function aceConvertFromTonHour() {
 
         var ton_hour = parseFloat(document.getElementById("ton_hour").value);
     
@@ -3516,7 +3516,7 @@ function ConvertFromTonHour() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromFuelOilKiloliter() {
+function aceConvertFromFuelOilKiloliter() {
 
         var fuel_oil_kiloliter = parseFloat(document.getElementById("fuel_oil_kiloliter").value);
     
@@ -3638,7 +3638,7 @@ function ConvertFromFuelOilKiloliter() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromFuelOilBarrel() {
+function aceConvertFromFuelOilBarrel() {
 
         var fuel_oil_barrel = parseFloat(document.getElementById("fuel_oil_barrel").value);
     
@@ -3760,7 +3760,7 @@ function ConvertFromFuelOilBarrel() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromGigaton() {
+function aceConvertFromGigaton() {
 
         var gigaton = parseFloat(document.getElementById("gigaton").value);
     
@@ -3886,7 +3886,7 @@ function ConvertFromGigaton() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromMegaton() {
+function aceConvertFromMegaton() {
 
         var megaton = parseFloat(document.getElementById("megaton").value);
     
@@ -4012,7 +4012,7 @@ function ConvertFromMegaton() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromkiloton() {
+function aceConvertFromkiloton() {
 
         var kiloton = parseFloat(document.getElementById("kiloton").value);
     
@@ -4138,7 +4138,7 @@ function ConvertFromkiloton() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromTonExplosives() {
+function aceConvertFromTonExplosives() {
 
         var ton_explosives = parseFloat(document.getElementById("ton_explosives").value);
     
@@ -4263,7 +4263,7 @@ function ConvertFromTonExplosives() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromDyneCentimeter() {
+function aceConvertFromDyneCentimeter() {
 
     var dyne_centimeter = parseFloat(document.getElementById("dyne_centimeter").value);
 
@@ -4388,7 +4388,7 @@ function ConvertFromDyneCentimeter() {
     document.getElementById("rydberg_constant").value = rydberg_constant;
 }
 
-function ConvertFromDyneCentimeter() {
+function aceConvertFromDyneCentimeter() {
 
         var dyne_centimeter = parseFloat(document.getElementById("dyne_centimeter").value);
     
@@ -4513,7 +4513,7 @@ function ConvertFromDyneCentimeter() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromGramForceMeter() {
+function aceConvertFromGramForceMeter() {
 
         var gram_force_meter = parseFloat(document.getElementById("gram_force_meter").value);
     
@@ -4638,7 +4638,7 @@ function ConvertFromGramForceMeter() {
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
 
-function ConvertFromGramForceCm() {
+function aceConvertFromGramForceCm() {
 
         var gram_force_cm = parseFloat(document.getElementById("gram_force_cm").value);
     
@@ -4770,7 +4770,7 @@ function ConvertFromGramForceCm() {
     }
 /******12April2022 */
 /*****13April2022 */
-function ConvertFromkilogramForceMeter() {
+function aceConvertFromkilogramForceMeter() {
 
         var kilogram_force_meter = parseFloat(document.getElementById("kilogram_force_meter").value);
     
@@ -4904,7 +4904,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromkilopondMeter() {
+    function aceConvertFromkilopondMeter() {
 
         var kilopond_meter = parseFloat(document.getElementById("kilopond_meter").value);
     
@@ -5036,7 +5036,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromPoundForceFoot() {
+    function aceConvertFromPoundForceFoot() {
 
         var pound_force_foot = parseFloat(document.getElementById("pound_force_foot").value);
     
@@ -5168,7 +5168,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromPoundForceInch() {
+    function aceConvertFromPoundForceInch() {
 
         var pound_force_inch = parseFloat(document.getElementById("pound_force_inch").value);
     
@@ -5300,7 +5300,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromOunceForceInch() {
+    function aceaceConvertFromOunceForceInch() {
 
         var ounce_force_inch = parseFloat(document.getElementById("ounce_force_inch").value);
     
@@ -5432,7 +5432,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromFootPound() {
+    function aceConvertFromFootPound() {
 
         var foot_pound = parseFloat(document.getElementById("foot_pound").value);
     
@@ -5564,7 +5564,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromInchPound() {
+    function aceConvertFromInchPound() {
 
         var inch_pound = parseFloat(document.getElementById("inch_pound").value);
     
@@ -5696,7 +5696,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromInchOunce() {
+    function aceConvertFromInchOunce() {
 
         var inch_ounce = parseFloat(document.getElementById("inch_ounce").value);
     
@@ -5829,7 +5829,7 @@ function ConvertFromkilogramForceMeter() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromPoundalFoot() {
+    function aceConvertFromPoundalFoot() {
 
     var poundal_foot = parseFloat(document.getElementById("poundal_foot").value);
 
@@ -5962,7 +5962,7 @@ function ConvertFromkilogramForceMeter() {
     document.getElementById("hartree_energy").value = hartree_energy;
     document.getElementById("rydberg_constant").value = rydberg_constant;
 }
-function ConvertFromThrem() {
+function aceConvertFromThrem() {
 
         var therm = parseFloat(document.getElementById("therm").value);
     
@@ -6095,7 +6095,7 @@ function ConvertFromThrem() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromThremEC() {
+    function aceConvertFromThremEC() {
 
         var therm_EC = parseFloat(document.getElementById("therm_EC").value);
     
@@ -6228,7 +6228,7 @@ function ConvertFromThrem() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromThremUS() {
+    function aceConvertFromThremUS() {
 
         var therm_US = parseFloat(document.getElementById("therm_US").value);
     
@@ -6361,7 +6361,7 @@ function ConvertFromThrem() {
         document.getElementById("hartree_energy").value = hartree_energy;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromHartreeEnergy() {
+    function aceConvertFromHartreeEnergy() {
 
         var hartree_energy = parseFloat(document.getElementById("hartree_energy").value);
     
@@ -6494,7 +6494,7 @@ function ConvertFromThrem() {
         document.getElementById("therm_US").value = therm_US;
         document.getElementById("rydberg_constant").value = rydberg_constant;
     }
-    function ConvertFromRydbergConstant() {
+    function aceConvertFromRydbergConstant() {
 
         var rydberg_constant = parseFloat(document.getElementById("rydberg_constant").value);
     
@@ -6629,7 +6629,7 @@ function ConvertFromThrem() {
     }
 /*****13April2022*/
 
-function reset(){
+function aceEnergyReset(){
         document.getElementById("joule").value = '';
         document.getElementById("kilojoule").value = '';
         document.getElementById("kilowatt_hour").value = '';

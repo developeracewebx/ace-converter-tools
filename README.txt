@@ -1,6 +1,6 @@
 === Ace Converter Tools ===
 Contributors: acewebx
-Tags: Color Converter, Energy Converter, Speed Converter, Pressure Converter, DMS Converter, Charge Converter
+Tags: Color Converter, Energy Converter, Speed Converter, Pressure Converter, DMS Converter
 Requires at least: 3.0.1
 Tested up to: 6.4.2
 Stable tag: 1.0.0

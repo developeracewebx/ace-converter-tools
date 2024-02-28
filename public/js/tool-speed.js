@@ -1,4 +1,4 @@
-function ConvertCentiSec() {
+function aceConvertCentiSec() {
 
         var centiSec = parseFloat(document.getElementById("centiSec").value);
 
@@ -29,7 +29,7 @@ function ConvertCentiSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertfootSec() {
+function aceConvertfootSec() {
 
         var footSec = parseFloat(document.getElementById("footSec").value);
 
@@ -60,7 +60,7 @@ function ConvertfootSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertInchSec() {
+function aceConvertInchSec() {
 
         var inchSec = parseFloat(document.getElementById("inchSec").value);
 
@@ -91,7 +91,7 @@ function ConvertInchSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertKilometerHour() {
+function aceConvertKilometerHour() {
 
         var kilometerHour = parseFloat(document.getElementById("kilometerHour").value);
 
@@ -121,7 +121,7 @@ function ConvertKilometerHour() {
         document.getElementById("speedVaccum").value = speedVaccum;
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
-function ConvertKilometerSec() {
+function aceConvertKilometerSec() {
 
         var kilometerSec = parseFloat(document.getElementById("kilometerSec").value);
 
@@ -152,7 +152,7 @@ function ConvertKilometerSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertKnot() {
+function aceConvertKnot() {
 
         var knot = parseFloat(document.getElementById("knot").value);
 
@@ -183,7 +183,7 @@ function ConvertKnot() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertMach() {
+function aceConvertMach() {
 
         var mach = parseFloat(document.getElementById("mach").value);
 
@@ -214,7 +214,7 @@ function ConvertMach() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertMeterSec() {
+function aceConvertMeterSec() {
 
         var meterSec = parseFloat(document.getElementById("meterSec").value);
 
@@ -245,7 +245,7 @@ function ConvertMeterSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertMileHour() {
+function aceConvertMileHour() {
 
         var mileHour = parseFloat(document.getElementById("mileHour").value);
 
@@ -276,7 +276,7 @@ function ConvertMileHour() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertMileSec() {
+function aceConvertMileSec() {
 
         var mileSec = parseFloat(document.getElementById("mileSec").value);
 
@@ -307,7 +307,7 @@ function ConvertMileSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertMillimeterSec() {
+function aceConvertMillimeterSec() {
 
         var millimeterSec = parseFloat(document.getElementById("millimeterSec").value);
 
@@ -338,7 +338,7 @@ function ConvertMillimeterSec() {
         document.getElementById("speedSound").value = speedSound.toFixed(8);
 }
 
-function ConvertSpeedVaccum() {
+function aceConvertSpeedVaccum() {
 
         var speedVaccum = parseFloat(document.getElementById("speedVaccum").value);
 
@@ -370,7 +370,7 @@ function ConvertSpeedVaccum() {
 }
 
 
-function ConvertSpeedVaccum() {
+function aceConvertSpeedVaccum() {
 
         var speedVaccum = parseFloat(document.getElementById("speedVaccum").value);
 
@@ -402,7 +402,7 @@ function ConvertSpeedVaccum() {
 }
 
 
-function ConvertSpeedSound() {
+function aceConvertSpeedSound() {
 
         var speedSound = parseFloat(document.getElementById("speedSound").value);
 
@@ -433,7 +433,7 @@ function ConvertSpeedSound() {
         document.getElementById("speedVaccum").value = speedVaccum;
 }
 
- function reset() {
+ function aceSpeedReset() {
         document.getElementById("centiSec").value = '';
         document.getElementById("footSec").value = '';
         document.getElementById("inchSec").value = '';

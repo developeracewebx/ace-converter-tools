@@ -1333,7 +1333,7 @@ jQuery(document).ready(function($){
 		"yellowgreen"
 	]
 
-	$('.aceColorTool').find('input[name="colors"]').on('keyup',function(){
+	$('.aceColorTool').find('input[name="acex_colors"]').on('keyup',function(){
 		$(this).closest('form').trigger('submit');
 	});
 

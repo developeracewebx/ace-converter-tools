@@ -1,5 +1,5 @@
 
-    function ConvertFromCoulomb() {
+    function acexConvertFromCoulomb() {
 
         var coulomb = parseFloat(document.getElementById("coulomb").value);
 
@@ -42,7 +42,7 @@
     }
 
 
-    function ConvertFromMegacoulomb() {
+    function acexConvertFromMegacoulomb() {
 
         var megacoulomb = parseFloat(document.getElementById("megacoulomb").value);
 
@@ -84,7 +84,7 @@
         } 
     }
 
-    function ConvertFromKilocoulomb() {
+    function acexConvertFromKilocoulomb() {
 
         var kilocoulomb = parseFloat(document.getElementById("kilocoulomb").value);
 
@@ -126,7 +126,7 @@
         } 
     }
 
-    function ConvertFromMillicoulomb() {
+    function acexConvertFromMillicoulomb() {
 
         var millicoulomb = parseFloat(document.getElementById("millicoulomb").value);
 
@@ -168,7 +168,7 @@
         } 
     }
 
-     function ConvertMicrocoulomb() {
+     function acexConvertFromMicrocoulomb() {
 
         var microcoulomb = parseFloat(document.getElementById("microcoulomb").value);
 
@@ -210,7 +210,7 @@
         } 
     }
 
-    function ConvertFromNanocoulomb() {
+    function acexConvertFromNanocoulomb() {
 
         var nanocoulomb = parseFloat(document.getElementById("nanocoulomb").value);
 
@@ -253,7 +253,7 @@
     }
 
 
-    function ConvertFromPicocoulomb() {
+    function acexConvertFromPicocoulomb() {
 
         var picocoulomb = parseFloat(document.getElementById("picocoulomb").value);
 
@@ -296,7 +296,7 @@
     }
 
 
-    function ConvertFromAbcoulomb() {
+    function acexConvertFromAbcoulomb() {
 
         var abcoulomb = parseFloat(document.getElementById("abcoulomb").value);
 
@@ -338,7 +338,7 @@
         } 
     }
 
-    function ConvertFromEmu() {
+    function acexConvertFromEmu() {
 
         var emu = parseFloat(document.getElementById("emu").value);
 
@@ -380,7 +380,7 @@
         } 
     }
 
-    function ConvertFromStatcoulomb() {
+    function acexConvertFromStatcoulomb() {
 
         var statcoulomb = parseFloat(document.getElementById("statcoulomb").value);
 
@@ -423,7 +423,7 @@
     }
 
 
-    function ConvertFromEsu() {
+    function acexConvertFromEsu() {
 
         var esu = parseFloat(document.getElementById("esu").value);
 
@@ -465,7 +465,7 @@
         } 
     }
 
-    function ConvertFromFranklin() {
+    function acexConvertFromFranklin() {
 
         var franklin = parseFloat(document.getElementById("franklin").value);
 
@@ -507,7 +507,7 @@
         } 
     }
 
-     function ConvertFromAmpereHour() {
+     function acexConvertFromAmpereHour() {
 
         var ampere_hour = parseFloat(document.getElementById("ampere_hour").value);
 
@@ -549,7 +549,7 @@
         } 
     }
 
-     function ConvertFromAmpereMinute() {
+     function acexConvertFromAmpereMinute() {
 
         var ampere_minute = parseFloat(document.getElementById("ampere_minute").value);
 
@@ -592,7 +592,7 @@
     }
 
 
-     function ConvertFromAmpereSecond() {
+     function acexConvertFromAmpereSecond() {
 
         var ampere_second = parseFloat(document.getElementById("ampere_second").value);
 
@@ -634,7 +634,7 @@
         } 
     }
 
-     function ConvertFromFaraday() {
+     function acexConvertFromFaraday() {
 
         var faraday = parseFloat(document.getElementById("faraday").value);
 
@@ -677,7 +677,7 @@
     }
 
 
-    function ConvertFromElementary() {
+    function acexConvertFromElementary() {
 
         var elementary = parseFloat(document.getElementById("elementary").value);
 
@@ -719,10 +719,7 @@
         } 
     }
 
-
-
-
-    function reset() {
+    function acexChargeReset() {
         document.getElementById("coulomb").value = '';
         document.getElementById("megacoulomb").value = '';
         document.getElementById("kilocoulomb").value = '';

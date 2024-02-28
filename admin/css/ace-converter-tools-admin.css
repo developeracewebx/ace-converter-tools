@@ -2,37 +2,37 @@
 * All of the CSS for your admin-specific functionality should be
 * included in this file.
 */
-i {font-weight: 400;}
-.ace-tools {padding-top: 20px;padding-right: 20px;}
-#left-menu {width: 280px;background-color: #313644;border-right: 1px solid #e6ecf5;overflow-x: hidden;}
-#left-menu.small-left-menu,
-#logo.small-left-menu {width: 60px;}
-#left-menu ul {padding: 0;margin: 0;}
-#left-menu ul li {padding: 0 10px;display: block;position: relative;}
-#left-menu > ul > li {margin: 15px 0;}
-#left-menu ul li a {color: #fff;width: 100%;display: inline-block;text-decoration: none;padding: 10px;box-sizing: border-box;display: flex;gap: 5px;}
-#left-menu ul li.active a {background: #0e9aee;}
-#left-menu li.has-sub ul {background-color: #454e62;margin: 0 -10px;padding-left: 45px;height: 0;overflow: hidden;}
-#logo {background-color: #464e62;font-size: 30px;line-height: 2em;color: #fff;padding-left: 15px;}
-.outer-box .card {border: 1px solid #e6ecf5;font-weight: 300;max-width: 100%;margin-top: 0px;}
-div#main-content {width: calc(100% - 280px);}
-.outer-box {display: flex;}
-.card .title {padding: 15px 20px;border-bottom: 1px solid #e6ecf5;margin-bottom: 10px;color: #000;font-size: 18px;padding-left: 0;}
-#left-menu > ul > li:not(.active) > a:hover {color: #0e9aee;}
-.content-ace ul li label {padding: 15px 20px;padding-left: 0;color: #1d2327;font-size: 1.3em;font-weight: 600;}
-.content-ace ul li {padding: 10px;display: flex;}
-.label-heading {width: 30%;}
-.content-box {width: 70%;margin-top: 20px;}
-.content-box code {font-size: 17px;}
-img.tool-icon {width: 20px;cursor: pointer;}
-.content-box img.tool-icon {width: 25px;cursor: pointer;margin: 0px 0px -5px 5px;}
+.acex i {font-weight: 400;}
+.acex .ace-tools {padding-top: 20px;padding-right: 20px;}
+.acex #left-menu {width: 280px;background-color: #313644;border-right: 1px solid #e6ecf5;overflow-x: hidden;}
+.acex #left-menu.small-left-menu,
+.acex #logo.small-left-menu {width: 60px;}
+.acex #left-menu ul {padding: 0;margin: 0;}
+.acex #left-menu ul li {padding: 0 10px;display: block;position: relative;}
+.acex #left-menu > ul > li {margin: 15px 0;}
+.acex #left-menu ul li a {color: #fff;width: 100%;display: inline-block;text-decoration: none;padding: 10px;box-sizing: border-box;display: flex;gap: 5px;}
+.acex #left-menu ul li.active a {background: #0e9aee;}
+.acex #left-menu li.has-sub ul {background-color: #454e62;margin: 0 -10px;padding-left: 45px;height: 0;overflow: hidden;}
+.acex #logo {background-color: #464e62;font-size: 30px;line-height: 2em;color: #fff;padding-left: 15px;}
+.acex .outer-box .card {border: 1px solid #e6ecf5;font-weight: 300;max-width: 100%;margin-top: 0px;}
+.acex div#main-content {width: calc(100% - 280px);}
+.acex .outer-box {display: flex;}
+.acex .card .title {padding: 15px 20px;border-bottom: 1px solid #e6ecf5;margin-bottom: 10px;color: #000;font-size: 18px;padding-left: 0;}
+.acex #left-menu > ul > li:not(.active) > a:hover {color: #0e9aee;}
+.acex .content-ace ul li label {padding: 15px 20px;padding-left: 0;color: #1d2327;font-size: 1.3em;font-weight: 600;}
+.acex .content-ace ul li {padding: 10px;display: flex;}
+.acex .label-heading {width: 30%;}
+.acex .content-box {width: 70%;margin-top: 20px;}
+.acex .content-box code {font-size: 17px;}
+.acex img.tool-icon {width: 20px;cursor: pointer;}
+.acex .content-box img.tool-icon {width: 25px;cursor: pointer;margin: 0px 0px -5px 5px;}
 
-.content-ace .content-box img {    max-width: 100%;}
-.prview-image {
+.acex .content-ace .content-box img {    max-width: 100%;}
+.acex .prview-image {
     position: relative;
     padding: 10px;
 }
-.prview-image:before {
+.acex .prview-image:before {
     content: "Preview";
     height: 100%;
     width: 100%;
@@ -51,7 +51,7 @@ img.tool-icon {width: 20px;cursor: pointer;}
     text-shadow: 1px 1px 4px #0000002b;
 }
 
-input.energy-converters {
+.acex input.energy-converters {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -61,13 +61,13 @@ input.energy-converters {
     cursor: pointer;
 }
 
-input.energy-converters:hover {
+.acex input.energy-converters:hover {
     background: black;
 }
 
 
 
-input.color-converters {
+.acex input.color-converters {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -77,11 +77,11 @@ input.color-converters {
     cursor: pointer;
 }
 
-input.color-converters:hover {
+.acex input.color-converters:hover {
     background: black;
 }
 
-input.speed-converters {
+.acex input.speed-converters {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -91,11 +91,11 @@ input.speed-converters {
     cursor: pointer;
 }
 
-input.speed-converters:hover {
+.acex input.speed-converters:hover {
     background: black;
 }
 
-input.input-submit {
+.acex input.input-submit {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -105,11 +105,11 @@ input.input-submit {
     cursor: pointer;
 }
 
-input.input-submit:hover {
+.acex input.input-submit:hover {
     background: black;
 }
 
-input.charge-converters {
+.acex input.charge-converters {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -119,11 +119,11 @@ input.charge-converters {
     cursor: pointer;
 }
 
-input.charge-converters:hover {
+.acex input.charge-converters:hover {
     background: black;
 }
 
-input.energy-converters {
+.acex input.energy-converters {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -133,11 +133,11 @@ input.energy-converters {
     cursor: pointer;
 }
 
-input.energy-converters:hover {
+.acex input.energy-converters:hover {
     background: black;
 }
 
-input.pressure-converters {
+.acex input.pressure-converters {
     background: #325ce8;
     border: none;
     color: #fff;
@@ -147,14 +147,14 @@ input.pressure-converters {
     cursor: pointer;
 }
 
-input.pressure-converters:hover {
+.acex input.pressure-converters:hover {
     background: black;
 }
-label.checkboxes {
+.acex label.checkboxes {
     font-weight: normal !important;
     font-size: 13px !important;
 }
 
-input.checkboxes {
+.acex input.checkboxes {
     margin-left: 8px !important;
 }

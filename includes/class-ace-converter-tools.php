@@ -201,7 +201,7 @@ class Ace_Converter_Tools {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Ace_Converter_Tools_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Acex_Ace_Converter_Tools_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

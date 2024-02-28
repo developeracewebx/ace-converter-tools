@@ -1,5 +1,5 @@
 
-    function ConvertFromPascal() {
+    function aceConvertFromPascal() {
 
         var pascal = parseFloat(document.getElementById("pascal").value);
         var kilopascal = pascal * 0.001;
@@ -21,7 +21,7 @@
         } 
     }
 
-    function ConvertFromKilopascal() {
+    function aceConvertFromKilopascal() {
 
         var kilopascal = parseFloat(document.getElementById("kilopascal").value);
         var pascal = kilopascal *   1000;
@@ -43,7 +43,7 @@
         } 
     }
 
-    function ConvertFromMegapascal() {
+    function aceConvertFromMegapascal() {
 
         var megapascal = parseFloat(document.getElementById("megapascal").value);
         var pascal = megapascal *   1000000;
@@ -65,7 +65,7 @@
         } 
     }
 
-    function ConvertFromHectopascal() {
+    function aceConvertFromHectopascal() {
 
         var hectopascal = parseFloat(document.getElementById("hectopascal").value);
         var pascal = hectopascal *      100;
@@ -87,7 +87,7 @@
         } 
     }
 
-    function ConvertFromBar() {
+    function aceConvertFromBar() {
 
         var bar = parseFloat(document.getElementById("bar").value);
         var pascal = bar *      100000;
@@ -109,7 +109,7 @@
         } 
     }
 
-    function ConvertFromTorr() {
+    function aceConvertFromTorr() {
 
         var torr = parseFloat(document.getElementById("torr").value);
         var pascal = torr *      133.32236842105;
@@ -131,9 +131,7 @@
         } 
     }
 
-    function ConvertFromPound() {
-
-
+    function aceConvertFromPound() {
         var pound = parseFloat(document.getElementById("pound").value);
         var pascal = pound *      6894.7600004501;
         var kilopascal = pound * 6.8947600004501;
@@ -155,8 +153,7 @@
         } 
     }
 
-     function ConvertFromKilopound() {
-
+    function aceConvertFromKilopound() {
         var kilopound = parseFloat(document.getElementById("kilopound").value);
         var pascal = kilopound *      6894760.0004501;
         var kilopascal = kilopound * 6894.7600004501;
@@ -177,10 +174,7 @@
         } 
     }
 
-
-  
-
-    function reset() {
+    function acePressureReset() {
         document.getElementById("pascal").value = '';
         document.getElementById("kilopascal").value = '';
         document.getElementById("megapascal").value = '';

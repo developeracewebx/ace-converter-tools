@@ -2,7 +2,7 @@
 
 jQuery(document).ready(function(){
 	// Add event listener to each menu item
-	var menuItems = document.querySelectorAll('#left-menu ul li');
+	var menuItems = document.querySelectorAll('.acex #left-menu ul li');
 	menuItems.forEach(function(item) {
 		item.addEventListener('click', function() {
 			// Remove active class from all menu items
@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
 	});
 	
 	// Function to copy shortcode to clipboard
-	function copyShortcode(cardId) {
+	function acexcopyShortcode(cardId) {
 		var shortcodeElement = jQuery('#' + cardId + ' .content-box code');
 		var shortcodeText = shortcodeElement.text().trim();
 
@@ -56,13 +56,13 @@ jQuery(document).ready(function(){
 	}
 	
 	// Click event for the copy icon
-	jQuery('.tool-icon#copy').on('click', function () {
+	jQuery('.acex .tool-icon#copy').on('click', function () {
 		var cardId = jQuery(this).closest('.card').attr('id');
-		copyShortcode(cardId);
+		acexcopyShortcode(cardId);
 	});
 
 
-	jQuery('#left-menu').find('*').removeClass('active');
+	jQuery('.acex #left-menu').find('*').removeClass('active');
 
 	var fragment = window.location.hash.substring(1);
 
@@ -81,15 +81,9 @@ jQuery(document).ready(function(){
 			targetSection.style.display = 'block'; 
 		}
 		else{
-			jQuery('#colorMenuItem').addClass('active');
+			jQuery('.acex #colorMenuItem').addClass('active');
 		}
 
-		$('#myform').submit(function(event) {
-			
-			event.preventDefault();
-
-			
-			location.reload();
-		});
+		
 
 });

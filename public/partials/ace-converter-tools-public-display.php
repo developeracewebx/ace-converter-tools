@@ -11,6 +11,9 @@
  * @package    Ace_Converter_Tools
  * @subpackage Ace_Converter_Tools/public/partials
  */
-?>
 
-<!-- This file should primarily consist of HTML with a little bit of PHP. -->
+
+    $file = ACE_CONVERTER_TOOLS_PATH . "public/partials/shortcode/" . $shortCodeAtts['tool'] . ".php";
+    if( ! file_exists($file) ) $file = ACE_CONVERTER_TOOLS_PATH . "public/partials/shortcode/color.php";
+
+    include( $file );
