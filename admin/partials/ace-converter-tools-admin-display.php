@@ -21,7 +21,7 @@ $charger_converter_text = get_option("acex_charger_converter");
 ?>
 <div class="ace-tools acex">
     <div id="logo">
-        <span><?php echo get_admin_page_title(); ?></span>
+        <span><?php echo esc_html( get_admin_page_title() ); ?></span>
     </div>
     <div class="outer-box">
         <div id="left-menu">
@@ -73,7 +73,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                             </li> 
                             <form action="#colorMenuItem" method="POST" class="color-convert"> 
                             <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
-                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
+                            <input type="hidden"name="_wpnonce" value="<?php echo esc_html( $nounce ); ?>">
                                     <?php
                                         foreach ($color_converter_text as $key => $label): ?>
                                                 <li>
@@ -83,7 +83,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                                                         </p>
                                                     </div>
                                                     <div class="content-box">
-                                                        <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo $color_converter_text[$key]; ?>">
+                                                        <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo esc_html( $color_converter_text[$key] ); ?>">
                                                     </div>
                                                 </li>
                                         <?php endforeach; ?>
@@ -128,7 +128,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                             </li>  
                             <form action="#energyMenuItem" method="POST" class="energy-convert">
                             <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
-                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
+                            <input type="hidden"name="_wpnonce" value="<?php echo esc_html( $nounce ); ?>">
                                     <?php $count_energy=1;
                                     foreach ($energy_converter_text as $key => $label): 
                                         if ($count_energy % 2 != 0){
@@ -140,7 +140,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                                                         </p>
                                                     </div>
                                                     <div class="content-box">
-                                                        <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo $energy_converter_text[$key]; ?>">
+                                                        <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo esc_html( $energy_converter_text[$key] ); ?>">
                                                    
                                                 <?php } else { ?>
                                                         <input type="checkbox" id="<?php echo $key; ?>" name="<?php echo $key; ?>" class="checkboxes" value=""<?php echo (!$energy_converter_text[$key] ? "checked" :'' ) ?>>
@@ -180,7 +180,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                         <ul>
                             <form action="#speedMenuItem" method="POST" class="speed-convert">
                             <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
-                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
+                            <input type="hidden"name="_wpnonce" value="<?php echo esc_html( $nounce ); ?>">
                                  <li>
                                         <div class="label-heading">
                                             <p>
@@ -204,7 +204,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                                                     </p>
                                                 </div>
                                                 <div class="content-box">
-                                                    <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo $speed_converter_text[$key]; ?>">
+                                                    <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo esc_html( $speed_converter_text[$key] ); ?>">
                                                 </div>
                                             </li>
                                     <?php endforeach; ?>
@@ -247,7 +247,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                             
                             <form action="#pressureMenuItem" method="POST" class="pressure-convert">
                             <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
-                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
+                            <input type="hidden"name="_wpnonce" value="<?php echo esc_html( $nounce ); ?>">
 
                                 <?php  foreach ($pressure_converter_text as $key => $label): ?>
                                             <li>
@@ -257,7 +257,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                                                     </p>
                                                 </div>
                                                 <div class="content-box">
-                                                    <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo $pressure_converter_text[$key]; ?>">
+                                                    <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo esc_html( $pressure_converter_text[$key] ); ?>">
                                                 </div>
                                             </li>
                                     <?php endforeach; ?>
@@ -300,7 +300,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                             </li> 
                             <form action="#dmsMenuItem" method="POST" id="myform"> 
                             <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
-                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
+                            <input type="hidden"name="_wpnonce" value="<?php echo esc_html( $nounce ); ?>">
                                 <?php foreach ($dms_converter_text as $key => $label): ?>
                                             <li>
                                                 <div class="label-heading">
@@ -309,7 +309,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                                                     </p>
                                                 </div>
                                                 <div class="content-box">
-                                                    <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo $dms_converter_text[$key]; ?>">
+                                                    <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo esc_html( $dms_converter_text[$key] ); ?>">
                                                 </div>
                                             </li>
                                     <?php endforeach; ?>   
@@ -351,10 +351,8 @@ $charger_converter_text = get_option("acex_charger_converter");
                             </li>  
                             <form action="#chargeMenuItem" method="POST" id="myform"> 
                             <?php $nounce = wp_create_nonce('save_ace_converter_settings'); ?>
-                            <input type="hidden"name="_wpnonce" value="<?php echo $nounce; ?>">
-                                <?php
-                            // print_r($charger_converter_text);
-                                
+                            <input type="hidden"name="_wpnonce" value="<?php echo esc_html( $nounce ); ?>">
+                                <?php                               
                                 foreach ($charger_converter_text as $key => $label): ?>
                                         <li>
                                             <div class="label-heading">
@@ -363,7 +361,7 @@ $charger_converter_text = get_option("acex_charger_converter");
                                                 </p>
                                             </div>
                                             <div class="content-box">
-                                                <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo $charger_converter_text[$key]; ?>">
+                                                <input type="text" id="<?php echo $key; ?>-title" name="<?php echo $key; ?>" value="<?php echo esc_html( $charger_converter_text[$key] ); ?>">
                                             </div>
                                         </li>
                                 <?php endforeach; ?>

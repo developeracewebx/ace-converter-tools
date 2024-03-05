@@ -28,10 +28,7 @@ $dms_converter_text = get_option("acex_dms_converter"); ?>
     <h5><?php echo esc_html($dms_converter_text['degrees']);?> / <?php echo esc_html($dms_converter_text['minutes']);?> / <?php echo esc_html($dms_converter_text['seconds']);?></h5>
         <div class="field-wrapper">
             <table cellpadding="2" cellspacing="0" id="table-dgree" border="0">
-          
-           
                 <tbody>
-
                     <tr>
                         <th></th>
                         
